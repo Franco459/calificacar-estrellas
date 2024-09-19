@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(248 250 252);
+}
+
+.estrellas {
+  display: flex;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.estrellas.rating-star {
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.estrellas .rating-star svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+  transition: 0.45s;
+  /*
+    fill: #f542e9;*/
+
+}
+
+.estrellas .rating-star.rated svg {
+  fill: rgb(212, 200, 22) !important;
+  color: rgb(212, 200, 22) !important;
+}
+
+.estrellas .rating-star.to-hover svg {
+  fill: rgb(8 145 178) !important;
+  color: rgb(8 145 178) !important;
+}
+
+.rating-text {
+  fill: rgb(8 145 178) !important;
+  color: rgb(8 145 178) !important;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
